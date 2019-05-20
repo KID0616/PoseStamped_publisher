@@ -31,7 +31,7 @@ int main(int argc, char **argv)
     msg.pose.position.x = count;
     msg.pose.position.y = count;
     para_pub.publish(msg);//PublishのAPI
-    printf("a = %d b = %d \n",msg.pose.position.x  ,msg.pose.position.y );
+    printf("a = %f b = %f \n",msg.pose.position.x  ,msg.pose.position.y );
     ros::spinOnce();
     loop_rate.sleep();
     count++;
