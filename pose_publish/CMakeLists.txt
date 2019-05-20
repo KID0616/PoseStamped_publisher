@@ -198,3 +198,5 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(pose_publish src/pose_publish.cpp)
+target_link_libraries(pose_publish ${catkin_LIBRARIES})
