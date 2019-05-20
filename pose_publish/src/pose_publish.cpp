@@ -16,7 +16,7 @@ int main(int argc, char **argv)
   // n.advertise<comp_tutorial::adder>("para_input", 1000);
   // comp_tutorial::adder型のメッセージをpara_inputというトピックへ配信する
   //"1000"はトピックキューの最大値
-  ros::Publisher para_pub = n.advertise<comp_tutorial::adder>("para_input", 1000);
+  ros::Publisher para_pub = n.advertise<geometry_msgs::PoseStamped>("para_input", 1000);
 
   //1秒間に1つのメッセージをPublishする
   ros::Rate loop_rate(1);
