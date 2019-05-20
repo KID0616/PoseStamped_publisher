@@ -25,7 +25,7 @@ int main(int argc, char **argv)
   //adder.msgで定義したa,bはメンバ変数としてアクセスできる
   geometry_msgs::PoseStamped msg;
 
-  int count = 0;
+  double count = 0;
   while (ros::ok())//ノードが実行中は基本的にros::ok()=1
   {
     msg.pose.position.x = count;
