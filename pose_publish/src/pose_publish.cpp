@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 
   //comp_tutrial::adder型のオブジェクトを定義
   //adder.msgで定義したa,bはメンバ変数としてアクセスできる
-  comp_tutorial::adder msg;
+  geometry_msgs::PoseStamped msg;
 
   int count = 0;
   while (ros::ok())//ノードが実行中は基本的にros::ok()=1
