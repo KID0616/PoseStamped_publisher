@@ -19,7 +19,7 @@ int main(int argc, char **argv)
   ros::Publisher para_pub = n.advertise<geometry_msgs::PoseStamped>("Pose_Stamped", 1000);
 
   //1秒間に1つのメッセージをPublishする
-  ros::Rate loop_rate(1);
+  ros::Rate loop_rate(10);
 
   //comp_tutrial::adder型のオブジェクトを定義
   //adder.msgで定義したa,bはメンバ変数としてアクセスできる
