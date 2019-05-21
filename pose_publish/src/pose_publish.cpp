@@ -31,6 +31,7 @@ int main(int argc, char **argv)
     msg.pose.position.x = count;
     msg.pose.position.y = count;
     msg.header.frame_id = "Unity";
+    msg.header.stamp =  ros::Time::now();
     para_pub.publish(msg);//PublishのAPI
     printf("a = %f b = %f \n",msg.pose.position.x  ,msg.pose.position.y );
     ros::spinOnce();
