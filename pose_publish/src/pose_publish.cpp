@@ -1,6 +1,5 @@
 // ros/ros.h　ROSに関する基本的なAPIのためのヘッダ
 #include "ros/ros.h"
-
 #include <geometry_msgs/PoseStamped.h>
 
 int main(int argc, char **argv)
