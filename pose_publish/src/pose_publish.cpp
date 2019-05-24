@@ -28,8 +28,8 @@ int main(int argc, char **argv)
   double count = 0;
   while (ros::ok())//ノードが実行中は基本的にros::ok()=1
   {
-    msg.pose.position.x = sin(count * M_PI / 100);
-    msg.pose.position.y = cos(count * M_PI / 100);
+    msg.pose.position.x =3 * sin(count * M_PI / 100);
+    msg.pose.position.y =3 * cos(count * M_PI / 100);
     msg.header.frame_id = "Unity";
     msg.header.stamp =  ros::Time::now();
     para_pub.publish(msg);//PublishのAPI
