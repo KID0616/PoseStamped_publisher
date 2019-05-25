@@ -10,6 +10,7 @@ int main(int argc, char **argv)
 
   // ノードハンドラの宣言
   ros::NodeHandle n;
+  
 
   //Publisherとしての定義
   // n.advertise<comp_tutorial::adder>("para_input", 1000);
